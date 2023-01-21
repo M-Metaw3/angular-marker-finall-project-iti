@@ -1,0 +1,86 @@
+<div class="sear">
+    <form action="">
+        <div class="input-group">
+            <app-search (searchtextchange)="onsearchtextenrt($event)"></app-search>
+            <div class="input-group-append">
+                <span class="input-group-text bg-transparent text-primary">
+                    <i class="fa fa-search"></i>
+                </span>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="row px-xl-5">
+<ng-container *ngFor="let product of newproducts">
+    <div class="col-lg-3 col-md-4 col-sm-6 pb-1" *ngIf="product.name.includes(searchtext) ">
+        <div >
+            <div class="product-item bg-light mb-4 item">
+                <div class="product-img position-relative overflow-hidden" style="height: 250px;">
+                    <img class="img-fluid w-100 pic" src="./assets/{{product.pictureLink}}" alt="">
+                    <div class="product-action">
+                        <a class="btn btn-outline-dark btn-square" href attr.PID="{{product.id}}"><i
+                                class="fa fa-shopping-cart"></i></a>
+                        <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
+                        <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
+                        <a class="btn btn-outline-dark btn-square" (click)="goToProductDetails(product.id)"><i
+                                class="fa fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="text-center py-4">
+                    <a class="h6 text-decoration-none text-truncate" href="">{{product.name}}</a>
+                    <div class="d-flex align-items-center justify-content-center mt-2">
+                        <h5>${{product.price}}</h5>
+                        <h6 class="text-muted ml-2"><del>${{product.price+100}}</del></h6>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mb-1">
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small>(99)</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
+</div>
+<!-- <div  class="row px-xl-5">
+
+    <div class="col-lg-3 col-md-6 col-sm-6 pb-1" *ngFor="let product of newproducts" class="card" style="width: 18rem;">
+        <div *ngIf="product.name.includes(searchtext)||searchtext === '' then thenBlock;">
+    
+        </div>
+        <ng-template #thenBlock>
+        <div class="product-item bg-light mb-4">
+            <div class="product-img position-relative overflow-hidden"style="height: 250px;">
+                <img class="img-fluid w-100" src="./assets/{{product.pictureLink}}" alt="">
+                <div class="product-action">
+                    <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
+                    <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
+                    <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
+                    <a class="btn btn-outline-dark btn-square" ><i class="fa fa-search"></i></a>
+                </div>
+            </div>
+            <div class="text-center py-4">
+                <a class="h6 text-decoration-none text-truncate" href="">{{product.name}}</a>
+                <div class="d-flex align-items-center justify-content-center mt-2">
+                    <h5>{{product.price}}$</h5>
+                    <h6 class="text-muted ml-2"><del>{{product.price+100}}$</del></h6>
+                </div>
+                <h6>{{product.Disc}}</h6>
+                <div class="d-flex align-items-center justify-content-center mb-1">
+                    <small class="fa fa-star text-primary mr-1"></small>
+                    <small class="fa fa-star text-primary mr-1"></small>
+                    <small class="fa fa-star text-primary mr-1"></small>
+                    <small class="far fa-star text-primary mr-1"></small>
+                    <small class="far fa-star text-primary mr-1"></small>
+                    <small>(99)</small>
+                </div>
+            </div>
+        </div>
+    </ng-template >
+    
+    </div>
+    </div> -->

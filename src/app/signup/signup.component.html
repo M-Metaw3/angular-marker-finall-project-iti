@@ -1,0 +1,204 @@
+<!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title> -->
+<!-- <link href="css/style.css" rel="stylesheet"> -->
+
+<!-- <script src="https://kit.fontawesome.com/d94d3d35d6.js" crossorigin="anonymous">
+</script> -->
+<div *ngIf="this.state" class="signUp-container" id="siginup">
+    <div class="parent">
+        <div class="bg-light p-30 mb-5" id="child" style="align-items: center;">
+            <div style="text-align:center; align-items: center ; justify-content: space-between; display:flex">
+                <div></div>
+                <h1>Sign up</h1>
+                <button type="button" class="btn-close" aria-label="Close" (click)="close()" ></button>
+
+            </div>
+            <form [formGroup]="signUpform" id="theform">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label>First Name</label>
+                        <input [class.is-invalid]="FirtName?.invalid &&FirtName?.touched" formControlName="FirtName"
+                            class="form-control" type="text" placeholder="John">
+                        <div *ngIf="FirtName?.invalid &&FirtName?.touched">
+                            <small class="text-danger" *ngIf="FirtName?.errors?.['required']">Please enter your
+                                FirstName</small>
+                            <small *ngIf="FirtName?.errors?.['forbiddenName']" class="text-danger">
+                                {{FirtName?.errors?.['forbiddenName'].value}} is not allowed </small>
+                        </div>
+                        <small *ngIf="FirtName?.valid && FirtName?.touched " class="text-success">the name is
+                            aproved</small>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label>Last Name</label>
+                        <input [class.is-invalid]="LastName?.invalid &&LastName?.touched" formControlName="LastName"
+                            class="form-control" type="text" placeholder="Doe">
+                        <div *ngIf="LastName?.invalid &&LastName?.touched">
+                            <small class="text-danger" *ngIf="LastName?.errors?.['required']">Please enter your
+                                LastName</small>
+                        </div>
+                        <small *ngIf="LastName?.valid && Email?.touched " class="text-success">the name is
+                            aproved</small>
+
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label>E-mail</label>
+                        <input [class.is-invalid]="Email?.invalid &&Email?.touched" formControlName="Email"
+                            class="form-control" type="text" placeholder="example@email.com">
+                        <div *ngIf="Email?.invalid &&Email?.touched">
+                            <small class="text-danger" *ngIf="Email?.errors?.['pattern']">Wrong Email !</small>
+                            <small class="text-danger" *ngIf="Email?.errors?.['required']">Please enter your
+                                Email</small>
+                        </div>
+                        <small *ngIf="Email?.valid && Email?.touched " class="text-success">email is aproved</small>
+
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label>Mobile No</label>
+                        <input [class.is-invalid]="MobileNo?.invalid &&MobileNo?.touched" formControlName="MobileNo"
+                            class="form-control" type="text" placeholder="+123 456 789">
+                        <div *ngIf="MobileNo?.invalid &&MobileNo?.touched">
+                            <small class="text-danger" *ngIf="MobileNo?.errors?.['pattern']">Wrong number !</small>
+                            <small class="text-danger" *ngIf="MobileNo?.errors?.['required']">Please enter your phone
+                                number</small>
+                        </div>
+                        <small *ngIf="MobileNo?.valid && MobileNo?.touched " class="text-success">the number is
+                            aproved</small>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label>Password</label>
+                        <div class="passInput">
+                            <input [class.is-invalid]="Password?.invalid &&Password?.touched" formControlName="Password"
+                                id="pass" class="form-control" type="password">
+                            <!-- <i id="passI" class="fa-solid fa-eye-slash" onclick="changeVisible(this)"></i> -->
+                            <div *ngIf="Password?.invalid &&Password?.touched">
+                                <small class="text-danger" *ngIf="Password?.errors?.['required']">Please enter your
+                                    password</small>
+                            </div>
+                            <small *ngIf="Password?.valid && Password?.touched " class="text-success">the name is
+                                password</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label>Repeat Password</label>
+                        <div class="passInput">
+                            <input [class.is-invalid]="signUpform.errors?.['misMatch']" formControlName="RepeatPassword"
+                                id="repass" class="form-control" type="password">
+                            <div *ngIf="RepeatPassword?.invalid &&RepeatPassword?.touched">
+                                <small class="text-danger" *ngIf="RepeatPassword?.errors?.['required']">Please enter
+                                    your
+                                    password</small>
+                            </div>
+                            <small *ngIf="RepeatPassword?.valid && RepeatPassword?.touched "
+                                class="text-success">password
+                                is aproved</small>
+                            <!-- <i id="repassI" class="fa-solid fa-eye-slash" onclick="changeVisible(this)"></i> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label>Address Line 1</label>
+                        <input [class.is-invalid]="AddressLine1?.invalid &&AddressLine1?.touched"
+                            formControlName="AddressLine1" class="form-control" type="text" placeholder="123 Street">
+                        <div *ngIf="AddressLine1?.invalid &&AddressLine1?.touched">
+                            <small class="text-danger" *ngIf="AddressLine1?.errors?.['required']">Please enter your
+                                Address</small>
+                        </div>
+                        <small *ngIf="AddressLine1?.valid && AddressLine1?.touched " class="text-success">the Address is
+                            aproved</small>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label>Address Line 2</label>
+                        <input [class.is-invalid]="AddressLine2?.invalid &&AddressLine2?.touched"
+                            formControlName="AddressLine2" class="form-control" type="text" placeholder="123 Street">
+                        <div *ngIf="AddressLine2?.invalid &&AddressLine2?.touched">
+                            <small class="text-danger" *ngIf="AddressLine2?.errors?.['required']">Please enter your
+                                Adderss</small>
+                        </div>
+                        <small *ngIf="AddressLine2?.valid && AddressLine2?.touched " class="text-success">the Address is
+                            aproved</small>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label>Country</label>
+                        <select [class.is-invalid]="Country?.invalid &&Country?.touched" formControlName="Country"
+                            class="custom-select">
+                            <option selected>United States</option>
+                            <option>Afghanistan</option>
+                            <option>Albania</option>
+                            <option>Egypt</option>
+                            <option>Alsudia</option>
+                            <option>Maraco</option>
+                            <option>Chaina</option>
+                            <option>Algeria</option>
+                            <option>Labnan</option>
+                            <option>Irace</option>
+                            <option>Jaban</option>
+                            <option>oman</option>
+                            <option>Algazar</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label>City</label>
+                        <input [class.is-invalid]="City?.invalid &&City?.touched" formControlName="City"
+                            class="form-control" type="text" placeholder="New York">
+                    </div>
+                    <div class="col -md-6 form-group">
+                        <label>State</label>
+                        <input [class.is-invalid]="State?.invalid &&State?.touched" formControlName="State"
+                            class="form-control" type="text" placeholder="New York">
+                        <div *ngIf="State?.invalid &&State?.touched">
+                            <small class="text-danger" *ngIf="State?.errors?.['required']">Please enter your
+                                State</small>
+                        </div>
+                        <small *ngIf="State?.valid && State?.touched " class="text-success">the State is aproved</small>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label>ZIP Code</label>
+                        <input [class.is-invalid]="ZipCode?.invalid &&ZipCode?.touched" formControlName="ZipCode"
+                            class="form-control" type="text" placeholder="123">
+                        <div *ngIf="ZipCode?.invalid &&ZipCode?.touched">
+                            <small class="text-danger" *ngIf="ZipCode?.errors?.['required']">Please enter your
+                                ZipCode</small>
+                        </div>
+                        <small *ngIf="ZipCode?.valid && ZipCode?.touched " class="text-success"> ZipCode is
+                            aproved</small>
+                    </div>
+                    <div class="col-md-12 form-group justify-content-center" >
+                        <input type="submit" disabled *ngIf="signUpform.invalid" (click)="SignUp()"
+                            class="btn btn-danger btn-block mb-4" value="Signup" width="50%">
+                        <input type="submit" *ngIf="signUpform.valid" (click)="SignUp()"
+                            class="btn btn-success btn-block mb-4" value="Signup" width="50%">
+                    </div>
+                    <label for="sign in">Already have account &nbsp;</label><a id="SigninSwitch" (click)="openSignin()">Sign in</a>
+                </div>
+            </form>
+            <br>
+
+        </div>
+    </div>
+</div>
+
+<!-- <script>
+    function changeVisible(icon)
+    {
+        if(icon.id=="passI")
+        passVisible("pass",icon);
+        else
+        passVisible("repass",icon);
+    }
+     
+    function passVisible(inputId,icon)
+    {
+        var inputType= document.getElementById(inputId).getAttribute("type");
+        if(inputType=="text")
+        {
+            document.getElementById(inputId).setAttribute("type","password");
+            icon.setAttribute("class","fa-solid fa-eye-slash");
+        }else
+        {
+            document.getElementById(inputId).setAttribute("type","text");
+            icon.setAttribute("class","fa-solid fa-eye");
+        }
+
+    }
+
+</script> -->

@@ -1,0 +1,379 @@
+{
+    "products":[
+        {
+            "pId": 0,
+            "pName": "football Shoes",
+            "price": 650,
+            "color": "Black",
+            "size": "S" ,
+            "rate": 4,
+            "pictureLink": "pictures/shoes/40.jpg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 1,
+            "pName": "Canon 800D",
+            "price": 500,
+            "color":"black",
+            "size":"L",
+            "rate": 4,
+            "pictureLink": "pictures/camera/1.jpg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 2,
+            "pName": "Nikon D850",
+            "price": 600,
+            "color":"black",
+            "size":"M",
+            "rate": 3,
+            "pictureLink": "pictures/camera/2.jpg",
+            "des": "Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 3,
+            "pName": "Sony ZV",
+            "price": 500,
+            "color":"black",
+            "size":"S",
+            "rate": 2,
+            "pictureLink": "pictures/camera/3.jpg",
+            "des": "modi sit atque ut nulla, soluta neque quasi eveniet laborum corporis quaerat!"
+        },
+        {
+            "pId": 4,
+            "pName": "Canon 2000D",
+            "price": 700,
+            "color":"black",
+            "size":"L",
+            "rate": 4,
+            "pictureLink": "pictures/camera/4.jpg",
+            "des": "modi sit atque ut nulla, soluta neque quasi eveniet laborum corporis quaerat!"
+        },
+        {
+            "pId": 5,
+            "pName": "Nikon D600",
+            "price": 400,
+            "color":"black",
+            "size":"XL",
+            "rate": 3,
+            "pictureLink": "pictures/camera/5.jpg",
+            "des": "modi sit atque ut nulla, soluta neque quasi eveniet laborum corporis quaerat!"
+        },
+        {
+            "pId": 6,
+            "pName": "T-Shirt polo",
+            "price": 150,
+            "color":"blue",
+            "size": "L" ,
+            "rate": 4,
+            "pictureLink": "pictures/shirts/6.jpg",
+            "des": "Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 7,
+            "pName": "T-Shirt kazari",
+            "price": 200,
+            "size": "L" ,
+            "rate": 3,
+            "pictureLink": "pictures/shirts/7.jfif",
+            "des": "Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 8,
+            "pName": "T-Shirt Lacost",
+            "price": 250,
+            "color":"green",
+            "size": "XL" ,
+            "rate": 4,
+            "pictureLink": "pictures/shirts/8.jpg",
+            "des": "Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 9,
+            "pName": "T-Shirt",
+            "price": 200,
+            "color":"black",
+            "size": "XL" ,
+            "rate": 3,
+            "pictureLink": "pictures/shirts/9.jfif",
+            "des": "Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 10,
+            "pName": "T-Shirt voika",
+            "price": 100,
+            "color":"blue",
+            "size": "M" ,
+            "rate": 3,
+            "pictureLink": "pictures/shirts/10.jpg",
+            "des": "Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 11,
+            "pName": "Headset H2",
+            "price": 200,
+            "size":"L",
+            "rate": 4,
+            "pictureLink": "pictures/headphons/11.jpg",
+            "des": "Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 12,
+            "pName": "Headset Jbl",
+            "price": 250,
+            "size":"S",
+            "rate": 3,
+            "pictureLink": "pictures/headphons/12.jpg",
+            "des": "Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 13,
+            "pName": "Headset HI2",
+            "price": 150,
+            "size":"S",
+            "rate": 3,
+            "pictureLink": "pictures/headphons/13.jpg",
+            "des": "Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 14,
+            "pName": "Headset Gigamax",
+            "price": 100,
+            "size":"XL",
+            "rate": 2,
+            "pictureLink": "pictures/headphons/14.jpg",
+            "des": "Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 15,
+            "pName": "Headset H black",
+            "price": 200,
+            "color":"black",
+            "size":"M",
+            "rate": 4,
+            "pictureLink": "pictures/headphons/15.jpg",
+            "des": "Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 16,
+            "pName": "Iphone 10",
+            "price": 500,
+            "size":"M",
+            "rate": 4,
+            "pictureLink": "pictures/phones/16.jpg",
+            "des": "Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 17,
+            "pName": "Iphone 11",
+            "price": 700,
+            "size":"M",
+            "rate": 4,
+            "pictureLink": "pictures/phones/17.jpg",
+            "des": "Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 18,
+            "pName": "Iphone 13",
+            "price": 800,
+            "size":"L",
+            "rate": 3,
+            "pictureLink": "pictures/phones/18.jpg",
+            "des": "Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 19,
+            "pName": "Iphone 11 black",
+            "price": 700,
+            "size":"M",
+            "rate": 3,
+            "pictureLink": "pictures/phones/19.jpg",
+            "des": "Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 20,
+            "pName": "Iphone 13 gold",
+            "price": 900,
+            "size":"M",
+            "rate": 3,
+            "pictureLink": "pictures/phones/20.jfif",
+            "des": "new..Id obcaecati commodi iure velit? Ea ex dolor fuga quidem."
+        },
+        {
+            "pId": 21,
+            "pName": "Laptop Dell",
+            "price": 2500,
+            "size":"XL",
+            "rate": 4,
+            "pictureLink": "pictures/laptop/21.jpg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 22,
+            "pName": "Laptop Dell Gaming",
+            "price": 3500,
+            "size":"S",
+            "rate": 3,
+            "pictureLink": "pictures/laptop/22.jpg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 23,
+            "pName": "Laptop Hp Gaming",
+            "price": 4000,
+            "size":"M",
+            "rate": 4,
+            "pictureLink": "pictures/laptop/23.jpg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 24,
+            "pName": "Laptop ",
+            "price": 3500,
+            "size":"XL",
+            "rate": 3,
+            "pictureLink": "pictures/laptop/24.jpg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 25,
+            "pName": "Laptop",
+            "price": 2500,
+            "size":"M",
+            "rate": 4,
+            "pictureLink": "pictures/laptop/25.jpg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 26,
+            "pName": "Smart Watch G1",
+            "price": 500,
+            "size":"M",
+            "rate": 4,
+            "pictureLink": "pictures/watches/26.jpg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 27,
+            "pName": "Smart Watch G2",
+            "price": 600,
+            "size":"S",
+            "rate": 3,
+            "pictureLink": "pictures/watches/27.jfif",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 28,
+            "pName": "Smart Watch H2",
+            "price": 400,
+            "size":"S",
+            "rate": 3,
+            "pictureLink": "pictures/watches/28.jfif",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 29,
+            "pName": "Smart Watch G2",
+            "price": 500,
+            "size":"M",
+            "rate": 4,
+            "pictureLink": "pictures/watches/29.png",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 30,
+            "pName": "Smart Watch N2",
+            "price": 450,
+            "size":"S",
+            "rate": 4,
+            "pictureLink": "pictures/watches/30.jpg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 31,
+            "pName": "Glass Fn",
+            "price": 200,
+            "size":"S",
+            "rate": 4,
+            "pictureLink": "pictures/glasses/31.jpg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 32,
+            "pName": "Glass F",
+            "price": 100,
+            "size":"S",
+            "rate": 3,
+            "pictureLink": "pictures/glasses/32.jpg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 33,
+            "pName": "Glass FN",
+            "price": 300,
+            "size":"L",
+            "rate": 4,
+            "pictureLink": "pictures/glasses/33.jpg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 34,
+            "pName": "Glass FT",
+            "price": 400,
+            "color":"black",
+            "size":"XL",
+            "rate": 3,
+            "pictureLink": "pictures/glasses/34.jpg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 35,
+            "pName": "Glass G",
+            "price": 350,
+            "color":"black",
+            "size":"XL",
+            "rate": 4,
+            "pictureLink": "pictures/glasses/35.jpg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 36,
+            "pName": "football Shoes g1",
+            "price": 700,
+            "size": "XS" ,
+            "rate": 4,
+            "pictureLink": "pictures/shoes/36.jpeg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 37,
+            "pName": "football Shoes g2",
+            "price": 800,
+            "color":"white",
+            "size": "XS" ,
+            "rate": 4,
+            "pictureLink": "pictures/shoes/37.jpeg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 38,
+            "pName": "football Shoes g3",
+            "price": 500,
+            "color":"green",
+            "size": "S" ,
+            "rate": 3,
+            "pictureLink": "pictures/shoes/38.jpeg",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "pId": 39,
+            "pName": "football Shoes H",
+            "price": 550,
+            "size": "L" ,
+            "rate": 3,
+            "pictureLink": "pictures/shoes/39.jfif",
+            "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        } 
+    ]
+}

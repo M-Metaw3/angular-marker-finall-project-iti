@@ -1,0 +1,60 @@
+.signin-container{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 9999;
+
+}
+
+    body
+      {height:200px;border: 50px solid rgb(44, 24, 8);
+        background-image: linear-gradient(to right, rgb(17, 17, 17), rgb(206, 142, 82));
+        }
+
+      .parent
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(0,25%);
+        border-radius: 20px;
+      }
+
+      #child
+      {
+        border: 1px solid;
+        border-radius:10px 70px;
+        /* border:10px ; */
+        width: 60%;
+        height:50%;
+      }
+
+      #subBtn
+      {  margin-left: 90px;
+        border: 0ch;
+        border-radius: 5px;
+        background-color: rgba(253, 200, 53, 0.958);
+        width: 100%;
+        height: 40px;
+      }
+
+      i
+      { width: 70%;
+        margin-left: -40px;
+        cursor: pointer;
+
+      }
+      .passInput 
+      {width: 70%; 
+        display: flex; align-content: center; align-items: center;
+      }
+
+    #SignupSwitch:hover{
+      color: rgb(164, 167, 0);
+      text-decoration: underline;
+      
+    }

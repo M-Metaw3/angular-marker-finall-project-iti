@@ -1,0 +1,66 @@
+.signUp-container{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 9999;
+
+}
+
+.parent
+      {
+        /* width:80%; */
+        display: flex;
+        justify-content: center;
+        /* border: 10px solid rgb(19, 11, 2); */
+        align-items: center;
+        /* transform: translate(0,25%); */
+        /* background-image: linear-gradient(to right,  rgb(17, 17, 17), rgb(206, 142, 82)); */
+
+      }
+
+      #child
+      {
+        border: 1px solid;
+        border-radius:  10px 50px;
+        margin-top: 20px;
+        width: 60%;
+        height: 80%;
+      }
+
+      i
+      { 
+        margin-left:40px;
+        cursor: pointer;
+
+      }
+
+      /* .passInput
+      {
+        display: flex; align-content: center; align-items: center;
+        width: 50px;
+      } */
+
+      #subBtn
+      {justify-content: center;
+        margin-left: 90px;
+        border: 0ch;
+        border-radius: 5px;
+        background-color: rgba(245, 140, 12, 0.907);
+        width: 80%;
+        height: 40px;
+      }
+
+      #theform{
+      justify-content: center;
+      display:  block;
+      }
+
+      #SigninSwitch:hover{
+        color: rgb(164, 167, 0);
+        text-decoration: underline;
+        
+      }

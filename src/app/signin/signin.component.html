@@ -1,0 +1,47 @@
+<div *ngIf="this.state" class="signin-container" id="siginIn" #signinDiv>
+    <div class="parent" >
+        
+        <div class="bg-light p-30 mb-5" id="child" style="align-items: center; width: 50%;" (clickOutside)="here()" > 
+            <div style="font-weight:500px ;text-align: center; align-items: center ; justify-content: space-between; display:flex">
+              <div></div>
+              <h1>Sign in</h1>
+              <button type="button" class="btn-close" aria-label="Close" (click)="close()" ></button>
+            </div>
+            <br>
+            <div style="width: 100%;" class="contianer">
+         <form [formGroup]="siginform" class="row" style="display: block; align-items: center;">
+           <div>
+             <label  for="email"><h3>E-mail</h3></label>
+        <input style="width:100%;" formControlName='Email' type="email" [class.is-invalid]= "EmailName?.invalid && EmailName?.touched" placeholder="enter your Email"  id="email" name="email" class="form-control" required/>
+        <div *ngIf= "EmailName?.invalid &&EmailName?.touched" > 
+             <small class="text-danger" *ngIf= "EmailName?.errors?.['pattern']">Wrong Email !</small>
+        <small class="text-danger" *ngIf= "EmailName?.errors?.['required']">Please enter your Email</small>
+            </div>
+            <small *ngIf= "EmailName?.valid && EmailName?.touched " class="text-success">email is aproved</small>
+          </div>
+              <br>
+          <div>
+             <label for="password"><h3>Password</h3></label>
+        <input style="width:100%;" formControlName='Password' type="password" [class.is-invalid]= "PasswordName?.invalid && PasswordName?.touched" placeholder="enter your Password"  id="password" name="password" class="form-control" required/>
+        <div *ngIf= "PasswordName?.invalid && PasswordName?.touched" > 
+          <small class="text-danger" *ngIf= "PasswordName?.errors?.['required']">Please enter your password</small>
+            </div>
+            <small *ngIf= "PasswordName?.valid && PasswordName?.touched " class="text-success">password is aproved</small>
+            </div>
+                
+              <br>  
+              <br>
+                <div>
+               <input type="submit" disabled *ngIf="siginform.invalid" class="btn btn-danger btn-block mb-4" (click)="login()"  value="Login" >
+        <input type="submit" *ngIf="!siginform.invalid" class="btn btn-success btn-block mb-4" (click)="login()"  value="Login" >
+          <label for="sign up">Create a new account &nbsp;</label><a id="SignupSwitch" (click)="openSignup()" >Sign up</a>
+          </div> 
+                               <!-- //onclick="changeVisible(this)"  -->
+              </form>
+            
+          </div><br>
+         
+        </div>
+        </div>
+    
+</div>
